@@ -1,0 +1,100 @@
+[0m18:56:48.121287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9F5644D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9F8AC9010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9F8BC6A10>]}
+
+
+============================== 18:56:48.131353 | b2168c6c-e7b2-4fcf-953d-9f28fb0687ba ==============================
+[0m18:56:48.131353 [info ] [MainThread]: Running with dbt=1.11.0-rc3
+[0m18:56:48.133468 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'invocation_command': 'dbt init', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m18:56:48.182184 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\HP\.dbt
+[0m18:57:50.391318 [debug] [MainThread]: Starter project path: C:\bigdata\anaconda3\Lib\site-packages\dbt\include\starter_project
+[0m18:57:50.443500 [info ] [MainThread]: 
+Your new dbt project "GreenField" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:57:50.448045 [info ] [MainThread]: Setting up your profile.
+[0m19:04:13.072744 [info ] [MainThread]: Profile GreenField written to C:\Users\HP\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:04:13.077992 [debug] [MainThread]: Command `dbt init` succeeded at 19:04:13.077127 after 445.20 seconds
+[0m19:04:13.079017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9F8B97D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9F22BCC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9F2222150>]}
+[0m19:04:13.082249 [debug] [MainThread]: Flushing usage events
+[0m19:04:14.215715 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:15:58.493219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EB382B4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EB382B4A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EB384E7410>]}
+
+
+============================== 19:15:58.504574 | 174f1dc7-5e3d-4b79-a937-70628c2f2766 ==============================
+[0m19:15:58.504574 [info ] [MainThread]: Running with dbt=1.11.0-rc3
+[0m19:15:58.510260 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m19:15:58.566871 [info ] [MainThread]: dbt version: 1.11.0-rc3
+[0m19:15:58.569749 [info ] [MainThread]: python version: 3.11.4
+[0m19:15:58.571290 [info ] [MainThread]: python path: C:\bigdata\anaconda3\python.exe
+[0m19:15:58.571290 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m19:16:07.742362 [info ] [MainThread]: Using profiles dir at C:\Users\HP\.dbt
+[0m19:16:07.745015 [info ] [MainThread]: Using profiles.yml file at C:\Users\HP\.dbt\profiles.yml
+[0m19:16:07.746796 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\HP\Downloads\DBT_TRAINING\bigquery\dbt-core\dbt_project.yml
+[0m19:16:07.748584 [info ] [MainThread]: adapter type: bigquery
+[0m19:16:07.751063 [info ] [MainThread]: adapter version: 1.10.3
+[0m19:16:07.754282 [info ] [MainThread]: Configuration:
+[0m19:16:07.756682 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:16:07.758717 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:16:07.760249 [info ] [MainThread]: Required dependencies:
+[0m19:16:07.761287 [debug] [MainThread]: Executing "git --help"
+[0m19:16:07.861299 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:16:07.861810 [debug] [MainThread]: STDERR: "b''"
+[0m19:16:07.864086 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:16:07.864086 [info ] [MainThread]: Connection:
+[0m19:16:07.866308 [info ] [MainThread]:   method: service-account
+[0m19:16:07.867316 [info ] [MainThread]:   database: greenfield-481313
+[0m19:16:07.870359 [info ] [MainThread]:   execution_project: greenfield-481313
+[0m19:16:07.871558 [info ] [MainThread]:   schema: test
+[0m19:16:07.874467 [info ] [MainThread]:   location: US
+[0m19:16:07.875965 [info ] [MainThread]:   priority: interactive
+[0m19:16:07.876852 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m19:16:07.878915 [info ] [MainThread]:   impersonate_service_account: None
+[0m19:16:07.879934 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m19:16:07.882068 [info ] [MainThread]:   job_retries: 1
+[0m19:16:07.882068 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m19:16:07.885818 [info ] [MainThread]:   job_execution_timeout_seconds: 200
+[0m19:16:07.886494 [info ] [MainThread]:   timeout_seconds: 200
+[0m19:16:07.890473 [info ] [MainThread]:   client_id: None
+[0m19:16:07.892594 [info ] [MainThread]:   token_uri: None
+[0m19:16:07.894327 [info ] [MainThread]:   compute_region: None
+[0m19:16:07.895867 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m19:16:07.897542 [info ] [MainThread]:   gcs_bucket: None
+[0m19:16:07.899387 [info ] [MainThread]:   dataproc_batch: None
+[0m19:16:07.901519 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:16:09.566109 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m19:16:09.567120 [debug] [MainThread]: On debug: select 1 as id
+[0m19:16:09.568233 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:16:10.982315 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=greenfield-481313&j=bq:US:88505281-2d03-4580-a406-d4273e264d3d&page=queryresults
+[0m19:16:10.982315 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m19:16:10.987854 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:16:10.988995 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\HP\Downloads\DBT_TRAINING\bigquery\dbt-core\dbt_project.yml> not found
+
+[0m19:16:10.992150 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project greenfield-481313: User does not have bigquery.jobs.create permission in project greenfield-481313.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:16:10.995356 [debug] [MainThread]: Command `dbt debug` failed at 19:16:10.995356 after 12.75 seconds
+[0m19:16:10.998005 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:16:11.000116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EB38513250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EB48D1F1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EB384B7B90>]}
+[0m19:16:11.003323 [debug] [MainThread]: Flushing usage events
+[0m19:16:12.211713 [debug] [MainThread]: An error was encountered while trying to flush usage events
