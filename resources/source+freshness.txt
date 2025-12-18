@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: 
+    database: 
+    schema: 
+    tables:
+      - name: 
+    freshness: 
+          warn_after: {count: 1, period: minute}
+          error_after: {count: 30, period: minute}
+    loaded_at_field: 

@@ -1,0 +1,16 @@
+CREATE TABLE Employee
+(
+employee_id INTEGER,
+First_name varchar(10),
+Last_name varchar(10),
+Manager_ID Integer,
+Department_ID int,
+Salary int,
+Loaded_DT TIMESTAMP_TZ
+)
+
+
+INSERT INTO Employee VALUES(339,'Tom','Grant',333,10,25000,convert_timezone('UTC', current_timestamp()));
+INSERT INTO Employee VALUES(337,'Jame','Anderson',332,3,23000,convert_timezone('UTC', current_timestamp()));
+INSERT INTO Employee VALUES(335,'John','cena',339,21,26000,convert_timezone('UTC', current_timestamp()));
+INSERT INTO Employee VALUES(338,'chris','Lee',332,5,12000,convert_timezone('UTC', current_timestamp()));

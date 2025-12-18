@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: freshness_source
+    database: jaffle-shop-481012
+    schema: test
+    tables:
+      - name: employee
+        freshness:
+          warn_after: {count: 1, period: minute}
+          error_after: {count: 30, period: minute}
+        loaded_at_field: Loaded_DT

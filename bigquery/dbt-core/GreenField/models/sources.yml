@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: training_source
+    database: jaffle-shop-481012 
+    schema: test
+    tables:
+      - name: employee
+        
