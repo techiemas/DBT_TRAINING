@@ -1,0 +1,40 @@
+CREATE TABLE SRC_PRODUCT
+(
+SRC_PRODUCT_id INTEGER,
+SRC_PRODUCT_name varchar(10),
+Brand_Name varchar(10),
+Country_Name varchar(10),
+Price int,
+updated_at TIMESTAMP_TZ
+)
+
+INSERT INTO SRC_PRODUCT VALUES(124,'Iphone 11','Apple','USA',800,convert_timezone('UTC', current_timestamp()));
+INSERT INTO SRC_PRODUCT VALUES(125,'Galaxy S23','Samsung','USA',1200,convert_timezone('UTC', current_timestamp()));
+INSERT INTO SRC_PRODUCT VALUES(126,'Galaxy A30','Samsung','USA',200,convert_timezone('UTC', current_timestamp()));
+INSERT INTO SRC_PRODUCT VALUES(127,'Iphone 13','Apple','USA',2000,convert_timezone('UTC', current_timestamp()));
+INSERT INTO SRC_PRODUCT VALUES(128,'UHD LED','Samsung','USA',1500,convert_timezone('UTC', current_timestamp()));
+
+
+
+
+merge into `jaffle-shop-481012`.`test`.`tgt_product` as DBT_INTERNAL_DEST
+        using (
+
+select * from test.src_product  
+
+
+    where 
+    updated_at > (select max(updated_at) from `jaffle-shop-481012`.`test`.`tgt_product`)
+
+        ) as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.SRC_PRODUCT_id = DBT_INTERNAL_DEST.SRC_PRODUCT_id))
+
+    
+    when matched then update set
+        `src_product_id` = DBT_INTERNAL_SOURCE.`src_product_id`,`src_product_name` = DBT_INTERNAL_SOURCE.`src_product_name`,`Brand_Name` = DBT_INTERNAL_SOURCE.`Brand_Name`,`Country_Name` = DBT_INTERNAL_SOURCE.`Country_Name`,`Price` = DBT_INTERNAL_SOURCE.`Price`,`updated_at` = DBT_INTERNAL_SOURCE.`updated_at`
+    
+
+    when not matched then insert
+        (`src_product_id`, `src_product_name`, `Brand_Name`, `Country_Name`, `Price`, `updated_at`)
+    values
+        (`src_product_id`, `src_product_name`, `Brand_Name`, `Country_Name`, `Price`, `updated_at`)

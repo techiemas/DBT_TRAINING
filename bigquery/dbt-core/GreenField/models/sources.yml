@@ -6,4 +6,5 @@ sources:
     schema: test
     tables:
       - name: employee
+      - name: stg_emp1  
         
